@@ -42,6 +42,7 @@ function getRandomInt(min, max) {
 // Primo prompt: l'user scelga se vuole che il risultato dell'operazione sia pari o dispari
 
 const userChoice = prompt("Scegli! Pari o dispari?")
+userChoice = userChoice.toLowerCase();
 
 ////////////////////////////////////////////////////////////////
 
@@ -69,3 +70,13 @@ console.log("Il tuo numero: " + userNumber + " Il numero del computer: " + compu
 ////////////////////////////////////////////////////////////////
 
 // Creo una funzione che permetta di stabilire se la somma dei due numeri e' pari o dispari
+
+function oddOrEven (userNumber, computerNumber){
+    let sum = userNumber + computerNumber;
+    if (sum % 2 === 0 ){
+        return true
+    } else {
+        return false
+    }
+    
+}
