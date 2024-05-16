@@ -3,8 +3,8 @@ ESERCIZIO 1:
     - PALINDROMA
 
 1. Creo una funzione che mi permetta di capire se una parola e' palindroma
-    - se la parola e' palindroma: la funzione ritornera' "True"
-    - se la parola non e' palindroma: la funzione ritornera' "False"
+    - se la parola e' palindroma: la funzione ritornera' "la parola e' palindroma"
+    - se la parola non e' palindroma: la funzione ritornera' "la parola non e' palindroma"
 
 2. creo un prompt dove verra' richiesto all'utente di inserire una parola
     - creo una variabile che conterra' la parola dell'utente
