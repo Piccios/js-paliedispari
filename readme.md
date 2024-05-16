@@ -1,11 +1,30 @@
-Palidroma
-Chiedere all’utente di inserire una parola
-Creare una funzione per capire se la parola inserita è palindroma
-Pari e Dispari
-L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-Dichiariamo chi ha vinto.
-Consigli del giorno
-Scriviamo sempre in italiano i passaggi che vogliamo fare
-Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
+
+ESERCIZIO 1: 
+    - PALINDROMA
+
+1. Creo una funzione che mi permetta di capire se una parola e' palindroma
+    - se la parola e' palindroma: la funzione ritornera' "True"
+    - se la parola non e' palindroma: la funzione ritornera' "False"
+
+2. creo un prompt dove verra' richiesto all'utente di inserire una parola
+    - creo una variabile che conterra' la parola dell'utente
+
+3. Richiamo la funzione in modo che valuti se la parola e' palindroma o meno
+
+
+ESERCIZIO 2:
+    - PARI E DISPARI
+
+1. Creo una funzione che mi permetta di generare un numero random (da 1 a 5)
+
+2. Creo due prompt con cui l'utente andra' a interagire:
+    - Creo un prompt dove verra' richiesto all'utente di sceglie tra pari o dispari
+    - Creo un altro prompt dove verra' richiesto all'utente di inserire un numero (da 1 a 5)
+
+3. Creo una funzione che mi permetta di stabilire se la somma dei due numeri e' pari o dispari:
+    - se la scelta dell'utente e' uguale al risultato della funzione: 
+        - comparira' un allert con scritto: "Hai vinto!"
+    - se la scelta dell'utente e' diversa dal risultato della funzione: 
+        - comparira' un allert con scritto: "Il computer vince!"
+
+
