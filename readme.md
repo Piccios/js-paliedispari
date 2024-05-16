@@ -15,7 +15,7 @@ ESERCIZIO 1:
 ESERCIZIO 2:
     - PARI E DISPARI
 
-1. Creo una funzione che mi permetta di generare un numero random (da 1 a 5)
+1. Creo una funzione che mi permetta di generare un numero random.
 
 2. Creo due prompt con cui l'utente andra' a interagire:
     - Creo un prompt dove verra' richiesto all'utente di sceglie tra pari o dispari
