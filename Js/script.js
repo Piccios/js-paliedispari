@@ -1,9 +1,4 @@
-// Creo una funzione che mi permetta di generare un numero random tra un minimo e un massimo
-
-function getRandomInt(min, max) {
-    const randomNumber = Math.floor( Math.random()* (max - min + 1) ) + min;
-    return randomNumber;
-}
+//    ESERCIZIO 1 ///////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////
 
@@ -25,3 +20,52 @@ let userWord = prompt("inserisci una parola palindroma: ")
 // richiamo la funzione isPalindorme
 
 alert(isPalindrome (userWord));
+
+
+/////////////////////////////////////////////////////////////////
+
+
+//    ESERCIZIO 2 ///////////////////////////////////////////////
+
+
+// Creo una funzione che mi permetta di generare un numero random tra un minimo e un massimo
+
+function getRandomInt(min, max) {
+    const randomNumber = Math.floor( Math.random()* (max - min + 1) ) + min;
+    return randomNumber;
+}
+
+/////////////////////////////////////////////////////////////////
+
+// Creo due prompt con cui l'utente andra' ad interagire
+
+// Primo prompt: l'user scelga se vuole che il risultato dell'operazione sia pari o dispari
+
+const userChoice = prompt("Scegli! Pari o dispari?")
+
+////////////////////////////////////////////////////////////////
+
+// Secondo prompt: l'user inserisca un numero da 1 a 5 (se il valore e' errato rispetto alla richiesta: verra' richiesto nuovamente il numero)
+let userNumber = 0;
+
+do { 
+    userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
+
+    if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
+        alert("Numero inserito non valido! Inserosci un numero da 1 a 5");
+    }
+} while (isNaN(userNumber) || userNumber < 1 || userNumber > 5);
+
+console.log(userNumber)
+
+////////////////////////////////////////////////////////////////
+
+// Affido al "computer" un numero randomico tra 1 e 5 tramite la funzione creata in precedenza
+
+const computerNumber = getRandomInt(1,5)
+
+console.log("Il tuo numero: " + userNumber + " Il numero del computer: " + computerNumber)
+
+////////////////////////////////////////////////////////////////
+
+// Creo una funzione che permetta di stabilire se la somma dei due numeri e' pari o dispari
