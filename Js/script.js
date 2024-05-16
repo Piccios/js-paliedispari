@@ -62,7 +62,7 @@ do {
 
 // Affido al "computer" un numero randomico tra 1 e 5 tramite la funzione creata in precedenza
 
-const computerNumber = getRandomInt(1,5)
+let computerNumber = getRandomInt(1,5)
 
 console.log("Il tuo numero: " + userNumber + " Il numero del computer: " + computerNumber)
 
@@ -73,12 +73,22 @@ console.log("Il tuo numero: " + userNumber + " Il numero del computer: " + compu
 function oddOrEven (numberOne, numberTwo){
     let sum = numberOne + numberTwo;
     if (sum % 2 === 0 ){
-        return true
+        return "pari"
     } else {
-        return false
+        return "dispari"
     }
 }
 
 // Richiamo la funzione oddOrEven
 
-const pariODispari = oddOrEven(userNumber, computerNumber)
+const pariODispari = oddOrEven(userNumber, computerNumber);
+
+console.log(pariODispari)
+
+/////////////////////////////////////////////////////////////////
+
+// Definisco un vincitore
+
+if (pariODispari === userChoice){
+    alert("Hai vinto!")
+}else alert("Il computer Vince!")
