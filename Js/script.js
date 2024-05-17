@@ -30,6 +30,13 @@ alert(isPalindrome (userWord));
 
 // Creo una funzione che mi permetta di generare un numero random tra un minimo e un massimo
 
+/**
+ *  
+ * @param min minimum value
+ * @param max maximum value
+ * @returns a random number between the minimum and teh maximum values
+ */
+
 function getRandomInt(min, max) {
     const randomNumber = Math.floor( Math.random()* (max - min + 1) ) + min;
     return randomNumber;
@@ -47,6 +54,7 @@ userChoice = userChoice.toLowerCase();
 ////////////////////////////////////////////////////////////////
 
 // Secondo prompt: l'user inserisca un numero da 1 a 5 (se il valore e' errato rispetto alla richiesta: verra' richiesto nuovamente il numero)
+
 let userNumber = 0;
 
 do { 
@@ -70,6 +78,13 @@ console.log("Il tuo numero: " + userNumber + " Il numero del computer: " + compu
 
 // Creo una funzione che permetta di stabilire se la somma dei due numeri e' pari o dispari
 
+/**
+ * 
+ * @param numberOne 
+ * @param numberTwo 
+ * @returns "pari" if the number is odd and "dispari" if the number is even
+ */
+
 function oddOrEven (numberOne, numberTwo){
     let sum = numberOne + numberTwo;
     if (sum % 2 === 0 ){
@@ -92,3 +107,4 @@ console.log(pariODispari)
 if (pariODispari === userChoice){
     alert("Hai vinto!")
 }else alert("Il computer Vince!")
+
